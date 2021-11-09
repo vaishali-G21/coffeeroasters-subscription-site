@@ -4,10 +4,217 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Fraunces:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assest/stylesheet/main.css" />
     <title>Coffeeroasters Subscription Site</title>
   </head>
+
   <body>
-    <h1>Coffeeroasters Subscription Site Index Page</h1>
-    <script type="module" src="/main.js"></script>
+    <div class="crss-wrapper">
+      <nav class="navbar">
+        <div class=" navbar-brand">
+            <img src="./assest/images/brand_name.png" alt="Coffeeroasters">
+        </div>
+        <div class="navbar-toggle " onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="navbar-nav">
+            <li class="navbar-items">
+                <a class="navbar-link" href="">Home</a>
+            </li>
+            <li class="navbar-items">
+                <a class="navbar-link" href="">About us</a>
+            </li>
+            <li class="navbar-items">
+                <a class="navbar-link" href="">crreate your plan</a>
+            </li>
+        </ul>
+    </nav>
+
+
+      <main class="crss_main">
+        <section class="create_plan_section">
+          <div class="grate-coffee">
+            <img src="./assest/images/banner.png" class="gc-img" alt="" />
+          </div>
+          <div class="content">
+            <div class="tilte_text">
+              <span>Great coffee</span>
+              <span class="last_text">made simple.</span>
+            </div>
+            <p class="">
+              Start your mornings with the world’s best coffees. Try our
+              expertly curated artisan coffees from our best roasters delivered
+              directly to your door, at your schedule.
+            </p>
+            <div class="create-btn">Create your plan</div>
+          </div>
+        </section>
+
+        <section class="our_collection_section">
+          <div class="our_coll_title">
+            <img src="./assest/images/our_collection.png" alt="">
+          </div>
+          <div class="our_collection_row">
+            <div class="our_collection_col">
+              <img src="./assest/images/kopi1 copy.png" alt="" />
+              <div class="our_collection_col_title">Gran Espresso</div>
+              <p>
+                Light and flavorful blend with cocoa and black pepper for an
+                intense experience
+              </p>
+            </div>
+            <div class="our_collection_col">
+              <img src="./assest/images/kopi2.png" alt="" />
+              <div class="our_collection_col_title">Planalto</div>
+              <p>
+                Brazilian dark roast with rich and velvety body, and hints of
+                fruits and nuts
+              </p>
+            </div>
+            <div class="our_collection_col">
+              <img src="./assest/images/kopi3.png" alt="" />
+              <div class="our_collection_col_title">Piccollo</div>
+              <p>
+                Mild and smooth blend featuring notes of toasted  almond almond and dried cherry
+              </p>
+            </div>
+            <div class="our_collection_col">
+              <img src="./assest/images/kopi4.png" alt="" />
+              <div class="our_collection_col_title">Danche</div>
+              <p>
+                Ethiopian hand-harvested blend densely packed with vibrant fruit
+                notes
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="why_choose_us_section">
+          <div class="wrapper">
+            <img  class="background_img" src="./assest/images/choose_bckgrd.png" alt="">
+
+            <div class="content">
+              <div class="title">Why choose us?</div>
+              <p>A large part of our role is choosing which particular coffees will be featured 
+                in our range. This means working closely with the best coffee growers to give 
+                you a more impactful experience on every level.</p>
+            </div>
+            <div class="card_group_row">
+              <div class="card">
+                <div class="card-body">
+                <img src="./assest/images/Shape.png" alt="">
+                <div class="title">Best quality</div>
+                <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <img src="./assest/images/Combined Shape.png" alt="">
+                <div class="title">Exclusive benefits</div>
+                <p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                </div>
+              </div> 
+               <div class="card">
+                <div class="card-body">
+                  <img src="./assest/images/travel.png" alt="">
+                <div class="title">Free shipping</div>
+                <p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                </div>
+              </div>
+             </div>
+           </div>
+        </section>
+
+        <section class="how_it_works_section">
+          <div class="how_it_works_title">How it Works</div>
+          <div class=" progress_bar mb-5">
+            <img src="./assest/images/Oval.png" alt="">
+            <img src="./assest/images/Path 2.png" width="350px" alt="">
+            <img src="./assest/images/Oval.png" alt="">
+            <img src="./assest/images/Path 2.png" width="350px" alt="">
+            <img src="./assest/images/Oval.png" alt="">
+            
+          </div>
+          <div class="how_it_works_row">
+            <div class="how_it_works_col">
+              <span>01</span>
+              <div class="header">Pick your coffee</div>
+              <p>
+                Select from our evolving range of artisan coffees. Our beans are
+                ethically sourced and we pay fair prices for them.There are new
+                coffees in all profiles every month for you to try out.
+              </p>
+            </div>
+            <div class="how_it_works_col">
+              <span>02</span>
+              <div class="header">Choose the frequency</div>
+              <p>
+                Customize your order frequency, quantity, even your roast style
+                and grind type. Pause, skip or cancel your subscription with no
+                commitment through our online portal.
+              </p>
+            </div>
+            <div class="how_it_works_col">
+              <span>03</span>
+              <div class="header">Receive and enjoy!</div>
+              <p>
+                We ship your package within 48 hours, freshly roasted. Sit back
+                and enjoy award-winning world-class coffees curated to provide a
+                distinct tasting experience.
+              </p>
+            </div>
+          </div>
+          <div class="btn">
+          <div class="create-btn">Create your plan</div>
+          </div>
+        </section>
+      </main>
+      <div class="crss_footer">
+        <img src="./assest/images/white_logo.png" alt="" class="footer_logo" />
+        <ul class="footer_nav_wrap">
+          <li class="footer_nav_items">
+            <a class="footer_nav_link" href="">Home</a>
+          </li>
+          <li class="footer_nav_items">
+            <a class="footer_nav_link" href="">About us</a>
+          </li>
+          <li class="footer_nav_items">
+            <a class="footer_nav_link" href="">create your plan</a>
+          </li>
+        </ul>
+        <div class="social_media_icon">
+          <a class="icon_link" href="facebook">
+            <img src="./assest/images/facebook.png" alt="facebook" />
+          </a>
+          <a href="twitter">
+            <img src="./assest/images/twitter.png" alt="twitter" />
+          </a>
+          <a href="instagram">
+            <img src="./assest/images/instagram.png" alt="instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction(x) {
+  x.classList.toggle("change");
+  const navs = document.querySelectorAll('.navbar-items')
+  navs.forEach(nav => nav.classList.toggle('navbar-ToggleShow'));
+
+}
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
