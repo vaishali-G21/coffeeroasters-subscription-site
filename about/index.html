@@ -4,10 +4,172 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Fraunces:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assest/stylesheet/main.scss" />
     <title>Coffeeroasters Subscription Site</title>
   </head>
+
   <body>
-    <h1>Coffeeroasters Subscription Site About Page</h1>
-    <script type="module" src="/about/about.js"></script>
+    <div class="crss-wrapper">
+      <nav class="navbar">
+        <div class="navbar-brand navbar__navbar-brand">
+          <img src="/assest/images/brand_name.png" alt="Coffeeroasters" />
+        </div>
+        <div
+          class="navbar__navbar-toogle navbar-toggle"
+          onclick="onclick_toggle(this)"
+        >
+          <div class="navbar__hamburger-bar1"></div>
+          <div class="navbar__hamburger-bar2"></div>
+          <div class="navbar__hamburger-bar3"></div>
+        </div>
+        <div class="navbar__nav-wrap">
+          <ul class="navbar__navbar-nav navbar-nav">
+            <li class="navbar__navbar-items navbar-items">
+              <a class="navbar__navbar-link navbar-link" href="">Home</a>
+            </li>
+            <li class="navbar-items">
+              <a class="navbar-link" href="">About us</a>
+            </li>
+            <li class="navbar-items">
+              <a class="navbar-link last-child" href="">create your plan</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="crss-main">
+        <section class="hero-aboutus">
+          <div class="hero-aboutus__img"></div>
+          <div class="hero-aboutus__content">
+            <h1>About us</h1>
+            <p class="hero-aboutus__text">
+              Coffeeroasters began its journey of exotic discovery in 1999,
+              highlighting stories of coffee from around the world. We have
+              since been dedicated to bring the perfect cup - from bean to brew
+              - in every shipment.
+            </p>
+          </div>
+        </section>
+        <section class="our-commitment">
+          <div class="our-commitment__img">
+            <img src="/assest/images/our_commitment.png" alt="our-commitment" />
+          </div>
+          <div class="our-commitment__content">
+            <h1>Our commitment</h1>
+            <p>
+              We’re built on a simple mission and a commitment to doing good
+              along the way. We want to make it easy for you to discover and
+              brew the world’s best coffee at home. It all starts at the source.
+              To locate the specific lots we want to purchase, we travel nearly
+              60 days a year trying to understand the challenges and
+              opportunities in each of these places. We collaborate with
+              exceptional coffee growers and empower a global community of
+              farmers through with well above fair-trade benchmarks. We also
+              offer training, support farm community initiatives, and invest in
+              coffee plant science. Curating only the finest blends, we roast
+              each lot to highlight tasting profiles distinctive to their native
+              growing region.
+            </p>
+          </div>
+        </section>
+
+        <section class="quality">
+          <img src="/assest/images/quality.png" alt="quality" />
+          <div class="quality__content">
+            <h1>Uncompromising quality</h1>
+            <p>
+              Although we work with growers who pay close attention to all
+              stages of harvest and processing, we employ, on our end, a
+              rigorous quality control program to avoid over-roasting or baking
+              the coffee dry. Every bag of coffee is tagged with a roast date
+              and batch number. Our goal is to roast consistent, user-friendly
+              coffee, so that brewing is easy and enjoyable.
+            </p>
+          </div>
+        </section>
+
+        <section class="our-headquarters">
+          <h1>Our headquarters</h1>
+          <div class="our-headquarters__contentgroup">
+            <div class="our-headquarters__content">
+              <img
+                src="/assest/images/united_kingdom.png"
+                alt="united kingdom"
+              />
+              <h1>United Kingdom</h1>
+              <ul>
+                <li>68 Asfordby Rd</li>
+                <li>Alcaston</li>
+                <li>SY6 1YA</li>
+                <li>+44 1241 918425</li>
+              </ul>
+            </div>
+            <div class="our-headquarters__content">
+              <img src="/assest/images/canada.png" alt="Canada" />
+              <h1>Canada</h1>
+              <ul>
+                <li>1528 Eglinton Avenue</li>
+                <li>Toronto</li>
+                <li>Ontario M4P 1A6</li>
+                <li>+1 416 485 2997</li>
+              </ul>
+            </div>
+            <div class="our-headquarters__content">
+              <img src="/assest/images/australia.png" alt="australia" />
+              <h1>Australia</h1>
+              <ul>
+                <li>36 Swanston Street</li>
+                <li>Kewell</li>
+                <li>Victoria</li>
+                <li>+61 4 9928 3629</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="footer">
+          <img src="/assest/images/white_logo.png" alt="" class="footer_logo" />
+          <ul class="footer__nav">
+            <li class="footer__nav-items">
+              <a class="footer__nav-link" href="">Home</a>
+            </li>
+            <li class="footer__nav-items">
+              <a class="footer__nav-link" href="">About us</a>
+            </li>
+            <li class="footer__nav-items">
+              <a class="footer__nav-link" href="">create your plan</a>
+            </li>
+          </ul>
+          <div class="footer__social-media-icon">
+            <a class="icon_link" href="facebook">
+              <img src="/assest/images/facebook.png" alt="facebook" />
+            </a>
+            <a href="twitter">
+              <img src="/assest/images/twitter.png" alt="twitter" />
+            </a>
+            <a href="instagram">
+              <img src="/assest/images/instagram.png" alt="instagram" />
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      function onclick_toggle(x) {
+        x.classList.toggle("change");
+        const navs = document.querySelectorAll(".navbar__nav-wrap");
+        navs.forEach((nav) => nav.classList.toggle("navbar-ToggleShow"));
+      }
+    </script>
+    <!-- <script type="module" src="main.js"></script> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
