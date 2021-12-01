@@ -9,9 +9,10 @@ body{
   padding: 0;
   margin: 0;
   background-color: #FEFCF7;
+  font-family: Barlow;
 }
 .crss-wrapper {
-  padding: 24px 32px;
+  padding: 0 32px;
 }
   
   .crss-main {
@@ -19,11 +20,16 @@ body{
   }
   .hero {
     margin-bottom: 120px;
+    @media (min-width:768px) {
+      margin-bottom: 200px;
+    }
     @media (min-width:1200px) {
       margin-bottom: 132px;
     }
     &__img {
       background-image: url(/assest/images/Bitmap.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
       width: 100%;
       height: 500px;
       border-radius: 10px;
@@ -359,7 +365,7 @@ body{
   .functions {
     padding: 100px 0;
     @media (min-width:768px) {
-      margin: 0 0 0 70px;
+      margin: 0 0 0 0px;
     }
     @media (min-width:1200px) {
       margin: 0 0 0 70px;
@@ -385,6 +391,22 @@ body{
         justify-content: flex-start;
         align-items: center;
       }
+      .functions__oval{
+        @media (min-width:1200px){
+          border: 2px solid #0E8784;
+          border-radius: 20px;
+          width: 32px;
+          height: 32px;
+        }
+      }
+      .functions__line{
+        @media (min-width:1200px){
+          height: 2px;
+          width: 316px;
+          border: 2px solid #FDD6BA;
+        }
+      }
+
       @media (min-width:1200px) {
         display: flex;
         justify-content: flex-start;
