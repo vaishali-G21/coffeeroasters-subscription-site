@@ -14,9 +14,18 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+      background-color: #FEFCF7;
+    }
+    @media (min-width:1200px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       background-color: #FEFCF7;
     }
     &__navbar-brand {
+      padding: 0px;
       > img {
         width: 163px;
         @media (min-width:768px) {

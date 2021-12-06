@@ -384,35 +384,7 @@ body{
         text-align: start;
       }
     }
-    &__progress-bar {
-      display: none;
-      @media (min-width:768px) {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-      }
-      .functions__oval{
-        @media (min-width:1200px){
-          border: 2px solid #0E8784;
-          border-radius: 20px;
-          width: 32px;
-          height: 32px;
-        }
-      }
-      .functions__line{
-        @media (min-width:1200px){
-          height: 2px;
-          width: 316px;
-          border: 2px solid #FDD6BA;
-        }
-      }
 
-      @media (min-width:1200px) {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-      }
-    }
     &__grid {
       display: flex;
       flex-direction: column;
@@ -432,6 +404,51 @@ body{
         @media (min-width:768px) {
           justify-content: start;
           align-items: flex-start;
+        }
+          div {
+          display: none;
+          @media (min-width:768px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          @media (min-width:1200px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          .functions__oval{
+            @media (min-width:768px){
+              border: 2px solid #0E8784;
+              border-radius: 20px;
+              width: 32px;
+              height: 32px;
+            }
+            @media (min-width:1200px){
+              border: 2px solid #0E8784;
+              border-radius: 20px;
+              width: 32px;
+              height: 32px;
+            }
+          }
+          .functions__line{
+            @media (min-width:768px){
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              height: 2px;
+              width: 200px;
+              border: 2px solid #FDD6BA;
+            }
+            @media (min-width:1200px) {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              width: 372px;
+            }
+          }
+    
+
         }
          span {
           font-family: Fraunces;

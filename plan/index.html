@@ -4,10 +4,170 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Fraunces:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assest/stylesheet/main.scss" />
     <title>Coffeeroasters Subscription Site</title>
   </head>
   <body>
-    <h1>Coffeeroasters Subscription Site Plan Page</h1>
-    <script type="module" src="/plan/plan.js"></script>
+    <div class="crss-wrapper">
+      <nav class="navbar">
+        <div class="navbar-brand navbar__navbar-brand">
+          <img src="/assest/images/brand_name.png" alt="Coffeeroasters" />
+        </div>
+        <div
+          class="navbar__navbar-toogle navbar-toggle"
+          onclick="onclick_toggle(this)"
+        >
+          <div class="navbar__hamburger-bar1"></div>
+          <div class="navbar__hamburger-bar2"></div>
+          <div class="navbar__hamburger-bar3"></div>
+        </div>
+        <div class="navbar__nav-wrap">
+          <ul class="navbar__navbar-nav navbar-nav">
+            <li class="navbar__navbar-items navbar-items">
+              <a class="navbar__navbar-link navbar-link" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="navbar-items">
+              <a class="navbar-link" href="/about/index.html">About us</a>
+            </li>
+            <li class="navbar-items">
+              <a class="navbar-link last-child" href="/plan/index.html"
+                >create your plan</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="crss-main">
+        <section class="hero-plan">
+          <div class="hero-plan__content">
+            <h1 class="mb-5">Create a plan</h1>
+            <p class="content__text">
+              Build a subscription plan that best fits your needs. We offer an
+              assortment of the best artisan coffees from around the globe
+              delivered fresh to your door.
+            </p>
+          </div>
+        </section>
+        <section class="functions">
+          <div class="functions__grid">
+            <div class="functions__item">
+              <div class="functions__progress-bar mb-5">
+                <div class="functions__oval"></div>
+                <div class="functions__line"></div>
+              </div>
+              <span>01</span>
+              <h1>Pick your coffee</h1>
+              <p>
+                Select from our evolving range of artisan coffees. Our beans are
+                ethically sourced and we pay fair prices for them.There are new
+                coffees in all profiles every month for you to try out.
+              </p>
+            </div>
+            <div class="functions__item">
+              <div class="functions__progress-bar mb-5">
+                <div class="functions__oval"></div>
+                <div class="functions__line"></div>
+              </div>
+              <span>02</span>
+              <h1>Choose the frequency</h1>
+              <p>
+                Customize your order frequency, quantity, even your roast style
+                and grind type. Pause, skip or cancel your subscription with no
+                subscription with no commitment online  through our online portal.
+              </p>
+            </div>
+            <div class="functions__item">
+              <div class="functions__progress-bar mb-5">
+                <div class="functions__oval"></div>
+              </div>
+              <span>03</span>
+              <h1>Receive and enjoy!</h1>
+              <p>
+                We ship your package within 48 hours, freshly roasted. Sit back
+                and enjoy award-winning world-class coffees coffees coffees
+                curated to provide a to provide a distinct tasting experience.
+              </p>
+            </div>
+          </div>
+
+        </section>
+        <section class="block">
+          <div class="side-block">
+           <ul>
+             <li><span>01</span>Preferences
+            <div class="border-bottom"></div></li>
+             <li><span>02</span>Bean Type
+              <div class="border-bottom"></div></li>
+             <li><span>03</span>Quantity 
+              <div class="border-bottom"></div></li>
+             <li><span>04</span>Grind Option
+              <div class="border-bottom"></div></li>
+             <li><span>05</span>Deliveries
+              <div class="border-bottom"></div></li>
+           </ul>
+          </div>
+          <div class="content-block">
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                How do you drink your coffee? 
+                <img src="/assest/images/down_arrow.png" alt="">
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="footer">
+        <img src="/assest/images/white_logo.png" alt="" class="footer_logo" />
+        <ul class="footer__nav">
+          <li class="footer__nav-items">
+            <a class="footer__nav-link" href="">Home</a>
+          </li>
+          <li class="footer__nav-items">
+            <a class="footer__nav-link" href="">About us</a>
+          </li>
+          <li class="footer__nav-items">
+            <a class="footer__nav-link" href="">create your plan</a>
+          </li>
+        </ul>
+        <div class="footer__social-media-icon">
+          <a class="icon_link" href="facebook">
+            <img src="/assest/images/facebook.png" alt="facebook" />
+          </a>
+          <a href="twitter">
+            <img src="/assest/images/twitter.png" alt="twitter" />
+          </a>
+          <a href="instagram">
+            <img src="/assest/images/instagram.png" alt="instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function onclick_toggle(x) {
+        x.classList.toggle("change");
+        const navs = document.querySelectorAll(".navbar__nav-wrap");
+        navs.forEach((nav) => nav.classList.toggle("navbar-ToggleShow"));
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
